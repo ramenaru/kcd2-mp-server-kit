@@ -1,0 +1,27 @@
+# Minimal, private KCD:MP server config for this kit.
+#
+# Every key is documented in the server's own server.toml.example, which sits
+# next to server.toml after install.sh runs. This file only sets what the kit
+# needs; add or change keys as you like.
+
+[server]
+name = "@NAME@"
+port = @PORT@
+max_players = 32
+password = ""              # "" = open server
+level = "@LEVEL@"
+http_status = true
+
+[gamemode]
+script = "gamemodes/purse.lua"
+watch = false              # true reloads the mode when the script file changes
+
+[client]
+console = true             # lets you open the F9 console (your server, your rules)
+
+[master]
+url = ""                   # "" = private, announced nowhere
+
+[audit]
+enabled = true
+mode = "enforce"           # the purse is the server's; a client edit reads as the real money
