@@ -1,0 +1,5 @@
+# local state and logs, never committed
+__pycache__/
+*.pyc
+*.log
+mods-backup/
